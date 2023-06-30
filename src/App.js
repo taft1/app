@@ -13,10 +13,10 @@ import './App.css';
 
 function App() {
     return (
-      <div className = 'App'>
-        <BrowserRouter>
+      <div className = 'App' class="bg-[#4c4a61]">
+        <BrowserRouter className="rounded-none">
         <Header />
-        <Routes>
+        <Routes className="">
           <Route path="/" element={<Home />} />
           <Route path="news" element={<News />} />
           <Route path="about" element={<About />} />

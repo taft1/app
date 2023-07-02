@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 
 
 function News(props) {
+  const newprops = JSON.stringify(props);
   //const newsOfDay = ( 
     //<ul class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
      // {props.posts.map((post) =>
@@ -33,7 +34,7 @@ function News(props) {
   //);
   return (
     <div>
-      {props}
+      {newprops}
     </div>
   );
 }

@@ -1,4 +1,6 @@
-import ReactDOM from 'react-dom'
+import React from 'react';
+import ReactDOM from 'react-dom';
+
 
 function News(props) {
   const newsOfDay = (
@@ -17,7 +19,7 @@ function News(props) {
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-50">
       <div class="group flex flex-col h-full bg-white border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
         <div class="h-100 flex flex-col justify-center items-center bg-blue-600 rounded-t-xl">
-        <img class="w-auto h-28" width="56" height="56" viewBox="0 0 56 56" fill="none" src="https://yt3.googleusercontent.com/gDCwhZGxgUY2Psz0NciwaxgVukw3MWf_f6T4OhymWkRQBdN8UGmGwsVhqiUjde98Dh8meWEE0g=s900-c-k-c0x00ffffff-no-rj">
+        <img class="w-auto h-28" width="56" height="56" viewBox="0 0 56 56" fill="none" src="https://yt3.googleusercontent.com/gDCwhZGxgUY2Psz0NciwaxgVukw3MWf_f6T4OhymWkRQBdN8UGmGwsVhqiUjde98Dh8meWEE0g=s900-c-k-c0x00ffffff-no-rj" alt="genius_logo">
         </img>
         <div class="p-4 md:p-6">
     <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">{post.content}</h3>
@@ -47,4 +49,4 @@ const posts = [
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<News posts={posts} />);
 
-export default News
+export default News;

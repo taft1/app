@@ -28,8 +28,8 @@ function News () {
         <img class="w-auto h-28" width="56" height="56" viewBox="0 0 56 56" fill="none" src="https://yt3.googleusercontent.com/gDCwhZGxgUY2Psz0NciwaxgVukw3MWf_f6T4OhymWkRQBdN8UGmGwsVhqiUjde98Dh8meWEE0g=s900-c-k-c0x00ffffff-no-rj" alt="genius_logo">
         </img>
         <div class="p-4 md:p-6">
-    <h3 class="text-xl font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">{post.content}</h3>
-    <p class="mt-3 text-gray-500">{post.paragraph}</p>
+    <h3 class="text-xl font-poppins font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">{post.content}</h3>
+    <p class="mt-3 font-poppins text-black">{post.paragraph}</p>
     
     </div >
     </div>
@@ -54,7 +54,7 @@ function News () {
 
 
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+
 
 
 export default News;

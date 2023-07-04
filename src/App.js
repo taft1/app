@@ -1,31 +1,24 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 
-
-
 import Header from './components/Header.jsx';
-import Footer from './components/Footer.jsx';
+import Home from './pages/Home.jsx';
+import News from './pages/News.jsx';
 
- import Home from './pages/Home.jsx';
- import News from './pages/News.jsx';
- import About from './pages/About.jsx';
- import Error from './pages/Error.jsx';
-
-import 'bootstrap/dist/css/bootstrap.min.css';
+import About from './pages/About.jsx';
 import './App.css';
 
 function App() {
     return (
-      <div className = 'App' class="bg-[#4c4a61]">
+      <div className = 'App' class="bg-[#4c4a61] grid-rows-4">
         <BrowserRouter className="rounded-none">
         <Header />
-        <Routes className="">
+        <Routes >
           <Route path="/" element={<Home />} />
           <Route path="news" element={<News />} />
-          <Route path="about" element={<About />} />
-          <Route path="*" element={<Error />} />
+          <Route path="about" class="" element={<About />}/>
         </Routes>
-        <Footer />
+        
         </BrowserRouter>
       </div>
     )
